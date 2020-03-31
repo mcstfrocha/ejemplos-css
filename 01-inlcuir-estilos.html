@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ejemplo 1 CSS</title>
+	<meta charset="utf-8">
+	<style>
+	/*
+	Existen tres modos de insertar estilos en una página HTML:
+	- Internos
+	- Externos
+	- En línea
+	*/
+		h1 {
+			/* estilos internos: dentro de una etiqueta style (a su vez dentro de head) */
+			color: blue;
+		}
+	</style>
+
+	<!-- estilos externos: en un archivo independiente a través de la etiqueta link -->
+	<link rel="stylesheet" type="text/css" href="css/01-estilos.css">
+</head>
+
+<body>
+	<h1 > Capítulo </h2>
+	<!-- estilos en línea: como valor del atributo style de una etiqueta -->
+	<h2 style="color:green;"> Apartado </h2>
+	<p id="p1"> Soy un párrafo </p>
+	<p id="p2"> Soy otro párrafo </p>
+</body>
+
+</html>

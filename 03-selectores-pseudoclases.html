@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de selectores de CSS</title>
+    <style type="text/css">
+        /* Las pseudoclases (:) son selectores que permiten seleccionar un elemento de la página en base a su estado */
+
+        /* :link selecciona enlaces que todavía no han sido visitados */
+        a:link {
+            color: red;
+        }
+
+        /* :visited selecciona enalces que ya se han visitado */
+        a:visited {
+            color: green;
+        }
+
+        /* :hover selecciona elementos sobre los que pasa el ratón */
+        a:hover {
+            color: magenta;
+        }
+
+        /* :active 	selecciona elementos que se pulsan con el ratón */
+        a:active {
+            color: blue;
+        }
+
+        /* :focus 	selecciona elementos que reciben el foco */
+        input:active {
+            color: orange;
+        }
+
+        /* first:child selecciona el primer hijo de un elemento */
+        p:first-child {
+            /* selecciona los párrafos sean los primeros hijos de otro elemento */
+            color: blue;
+        }
+
+        /* los selectores pueden combinarse */
+        div p:first-child {
+            /* selecciona cada párrafo que sea el primer hijo de un div */
+            color: blue;
+        }
+
+        /* first:child selecciona el último hijo de un elemento */
+        p:last-child {
+            /* selecciona cada párrafo que sea el último hijo de otro elemento */
+            color: blue;
+        }
+
+        /* :nth-child(n) selecciona cada elementos que sea el enésimo hijo de otro elemento */
+        p:nth-child(3) {
+            /* :nth-child(3) selecciona cada elemento que sea el tercer hijo de otro elemento */
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="w">
+        <li><span><a href="http://www.ciclosmontecastelo.com"> Descendiente de li</a></span></li>
+        <li><a href=""> Hijo de li</a></li>
+    </ul>
+
+    <h1> Titular </h1>
+    <h2> Subtitular </h2>
+    <p class="c c1"> Parrafo con clase que empieza por c</p>
+</body>
+
+</html>

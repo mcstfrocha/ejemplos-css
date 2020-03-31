@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ejemplo de selectores de CSS</title>
+	<style type="text/css">
+		/* Los selectores constituyen la parte de una regla CSS que identifica sobre qué elementos de la página queremos aplicar estilos */
+
+		/* Selector de etiqueta */
+		a {
+			/* Links */
+			color: blue;
+		}
+
+		p {
+			/* Parrafos */
+			color: blue;
+		}
+
+		ul {
+			/* Listas desordenadas */
+			color:blue;
+		}
+
+		li {
+			/* List items */
+			color: blue;
+		}
+
+		/* selector de varias etiquetas */
+		h1,
+		h2,
+		h3,
+		h4 {
+			/* Selecciona todos los encabezados que sean h1, h2, h3 o h4 */
+			color: blue;
+		}
+
+		/* Selector de clase (atributo class)
+		<a href"#" class="cabecera especial" id="id2"> */
+			.cabecera {
+				/* Selecciona las etiquetas que tengan un atributo class cuyo valor sea "cabecera" */
+				color: blue;
+			}
+
+			/*Selector de clase combinado con selector de etiqueta */
+			div.cabecera {
+				/* Selecciona las etiquetas div que tengan un atributo class cuyo valor sea "cabecera" */
+				color: blue;
+			}
+
+			/*Selector de clase múltiple */
+			.cabecera.especial {
+				/* Selecciona las etiquetas tengan un atributo class cuyo valor contenga tanto "cabecera" como "especial" */
+				color: blue;
+			}
+
+			/* Selector de id
+			<li id="caja1">
+			*/
+			#caja1 {
+				/* Selecciona la etiqueta que tenga el atributo id cuyo valor sea "caja1" */
+				color: blue;
+			}
+
+			/* Selector de descendientes. Un descendiente es una etiqueta que están anidada dentro de otra */
+			header a {
+				/* Selecciona los enlaces que estén dentro de etiquetas header */
+				color: blue;
+			}
+
+			/* Selector de hijos.
+			Un hijo es un descendiente directo
+			En el siguiente ejemplo, el párrafo es descendiente de la sección y del artículo. Además es hijo del párrafo.
+			
+			<section>
+				<article>
+					<p>Soy un párrafo </p>
+				</article>
+			</section>			
+			*/
+			li>a {
+				/* Selecciona enlaces que sean hijos de elementos de lista li */
+				color: blue;
+			}
+
+			.cabecera a.especial {
+				/* 
+				Selecciona enlaces que tengan el atributo class con valor "especial" 
+				y que sean descendientes de etiquetas que tengan el atributo class con valor "cabecera" 
+				*/
+				color: blue;
+			}
+
+			/* Selector universal */
+			* {
+				/* Selecciona todas las etiquetas */
+				color: blue;
+			}
+
+			/* Selector universal combinado con descendiente */
+			div * a {
+				/* Selecciona todos los enlaces (a) que sean descendientes de cualquier otra etiqueta (*) que a su vez sea descendiente de una etiqueta div */
+				color: blue;
+			}
+
+			/* Selector de hermano adyacente */
+			h1+h2 {
+				/* Selecciona un encabezado h2 que siga a un encabezado h1*/
+				color: blue;
+			}
+
+			/* Selector de hermanos */
+			h1~h2 {
+				/* Selecciona todos los encabezados h2 que sigan a un encabezado h1*/
+				color: blue;
+			}
+
+			/* Selectores de atributos */
+			[class] {
+				/* Selecciona todas las etiquetas que tenga atributo class */
+				color: blue;
+			}
+
+			[href="http://www.ciclosmontecastelo.com"] {
+				/* Selecciona todas las etiquetas que tenga atributo href con valor "http://www.ciclosmontecastelo.com" */
+				color: blue;
+			}
+
+			p[class^="c"] {
+				/* Selecciona todos los párrafos que tengan atributo class cuyo valor empiece por c */
+				color: blue;
+			}
+
+			p[class$="c"] {
+				/* Selecciona todos los párrafos que tengan atributo class cuyo valor termine por c */
+				color: blue;
+			}
+
+			p[href*="ciclos"] {
+				/* Selecciona todos los párrafos que tengan atributo class cuyo valor contiene la c */
+				color: blue;
+			}
+	</style>
+</head>
+
+<body>
+	<h2>prueba</h2>
+	<ul class="w">
+		<li><span><a href="http://www.ciclosmontecastelo.com"> Descendiente de li</a></span></li>
+		<li><a href=""> Hijo de li</a></li>
+	</ul>
+
+	<h1> Titular </h1>
+	<h2> Subtitular </h2>
+	<p class="c c1"> Parrafo con clase que empieza por c</p>
+</body>
+
+</html>
