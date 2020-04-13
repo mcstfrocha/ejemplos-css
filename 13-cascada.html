@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cascada</title>
+    <meta charset="utf-8">
+    <style>
+        /*
+        La cascada en CSS determina el orden en el que se aplican las reglas cuando existen conflictos entre varias de las mismas.
+        Si los selectores son exactamente iguales (como en el siguiente ejemplo), se aplica el último estilo en ser aplicado.
+        Los estilos en línea tienen máxima prioridad en estos casos.
+        */
+
+        p {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/01-estilos.css">
+</head>
+
+<body>
+    <p style="color:green;">Soy un párrafo</p>
+    <p>Soy otro párrafo</p>
+</body>
+
+</html>

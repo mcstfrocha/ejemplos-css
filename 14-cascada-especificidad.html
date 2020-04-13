@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Especificidad</title>
+    <meta charset="utf-8">
+    <style>
+        /*
+        En el ejemplo anterior todos los selectores son iguales.
+        La especificidad es un conjunto de reglas que establece cuál es el estilo que se aplica en caso de que varios selectores seleccionen un mismo elemento.
+        
+        De mayor a menor especificidad en el selector:
+        etiqueta --> clase --> identificador
+
+        Por tanto un selector con id es más específico que uno con clase,
+        un selector con clase es más específico que uno con etiqueta,
+        un selector con id y clase es más específico que un selector que solamente tenga id,
+        un selector con dos clases es más específico que uno que solamente tenga una clase,
+        etc.
+
+        Con todo, la prioridad de aplicación de los estilos explicados hasta el momento queda como sigue:
+        1 Estilos en línea
+        2 Orden establecido por la especificidad
+        3 Orden en en el documento
+        4 Valores heredados
+        5 Valores por defecto del navegador (letra negra, fondo blanco, etc.)
+        */
+
+        p#x2.c2 {
+            color: magenta;
+        }
+
+        p#x2 {
+            color: orange;
+        }
+
+        p.c2 {
+            color: lime;
+        }
+
+        p {
+            color: blue; /* aunque sea el último selector, es el menos específico, por eso los párrafos no salen en azul, salvo el primer párrafo que tiene una regla en línea */
+        }        
+
+        /*
+        Orden de los tres selectores anteriores por especificidad:
+        p --> p.c2 --> p#x2 --> p#x2.c2 por eso el segundo párrafo es magenta
+        El primero es verde debido a que los estilos en línea son más prioritarios.
+        */
+
+        p { font-size: 16px;  }
+        body { font-size: 26px; }
+
+        /* los párrafos tendrán fuente 16px, ya que el valor del body es heredado (tiene la menor prioridad posible) */
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/01-estilos.css">
+</head>
+
+<body>
+    <p id="x1" class="c1" style="color:green;">Soy un párrafo</p>
+    <p id="x2" class="c2">Soy un párrafo</p>
+</body>
+
+</html>

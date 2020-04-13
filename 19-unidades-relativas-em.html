@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        /*
+        em unidad relativa al valor de la propiedad font-size del elemento en cuestión
+        */
+
+        body{ font-size: 20px;}
+        aside{ font-size: 0.5em;}  /* valor computado = 20px * 0.5 = 10px */
+        p { font-size: 1.5em;}  /* valor computado = 10px (heredado) * 1.5 = 15px */
+
+    </style>
+</head>
+
+<body>
+    <aside>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </aside>
+</html>

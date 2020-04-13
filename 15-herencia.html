@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        /*
+        La herencia en CSS permite que algunas propiedades se pasen automáticamente desde los elementos a sus descendientes.
+        
+        La herencia afecta a las siguientes propiedades:
+            - Todas las propiedades de texto.
+            - Todas las propiedades relacionadas con listas.
+            - La propiedad color.
+
+        Por tanto, NO todas las propiedades CSS se heredan.
+        La herencia está diseñada para facilitar la tarea de los diseñadores, de tal modo que no sea necesario aplicar estilos a todos los elementos.
+        
+        Ejemplo:
+        El valor por defecto del tamaño de fuente de la etiqueta <html> es 16px. De ese modo, todos los elementos de la página heredena ese tamaño aunque no lo especifiquemos.
+        */
+
+        p {
+            color: red;
+        }
+
+        /* el elemento span hereda el color de su padre, aunque NO le hayamos especificado color */
+    </style>
+</head>
+
+<body>
+    <h1> Título 1</h1>
+    <p>
+        Lorem <span>ipsum</span> dolor etuer.
+    </p>
+
+</html>

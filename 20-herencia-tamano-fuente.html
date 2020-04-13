@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        /* En la herencia del tamaño de la fuente, se hereda el valor computado, no el especificado en la hoja de estilos */    
+        body {
+            font-size: 100%; /* valor computado = 16px * 1 = 16px */
+        }
+
+        p {
+            font-size: 75%; /* valor computado = 16px (heredado) * 0.75 = 12px */
+        }
+
+        /* En este caso, el span no hereda 75%, sino el valor computado de 12px*/
+    </style>
+</head>
+
+<body>
+    <h1> Título 1</h1>
+    <p>
+        Lorem <span>ipsum</span> dolor etuer.
+    </p>
+
+</html>
