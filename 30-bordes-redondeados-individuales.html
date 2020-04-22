@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Existen propiedades individuales para establecer de modo independiente el radio de cada vértice */
+        p.round1 {
+            border: 2px solid red;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 20px;
+        }
+
+        /* Si se especifica un valor, este aplica a los cuatro vértices */
+
+        /*
+        Si se especifican dos valores,
+        el primer valor aplica a los vértices superior izquierdo e inferior derecho,
+        el segundo valor aplica a los vértices superior derecho e inferior izquierdo
+        */
+
+        /*
+        Si se especifican tres valores,
+        el primer valor aplica al vértice superior izquierdo,
+        el segundo valor aplica a los vértices superior derecho e inferior izquierdo
+        el tercer valor aplica al vértice inferior derecho
+        */
+
+        /* Se pueden especificar cuatro valores, por este orden: superior izquierdo, superior derecho, inferior-dercho, inferior-izquierdo */
+        p.round2 {
+            border: 2px solid green;
+            border-radius: 5px 10px 15px 20px; /* top, right bottom left */
+        }    
+    </style>
+</head>
+
+<body>
+
+    <h2>La propiedad border-radius</h2>
+    <p>Esta propiedad se emplea para añadir border redondeados a un elemento.</p>
+
+    <p class="round1">Bordes redondeados</p>
+    <p class="round2">Otros bordes redondeados</p>
+
+</body>
+
+</html>

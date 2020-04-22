@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+         /* Si se especifica un valor, este aplica a los cuatro lados */
+         p.one {
+            border-style: solid;
+            border-color: red;
+        }
+
+        /*
+        Si se especifican dos valores,
+        el primer valor aplica a los lados superior e inferior,
+        el segundo valor aplica a los lados derecho e izquierdo
+        */
+        p.two {
+            border-style: solid;
+            border-color: red green;
+        }
+
+        
+        /*
+        Si se especifican tres valores,
+        el primer valor aplica al lado superior,
+        el segundo valor aplica a los lados izquierdo y derecho,
+        el tercer valor aplica al lado inferior
+        */
+        p.three {
+            border-style: solid;
+            border-color: red green blue;
+        }
+        /* Se pueden especificar cuatro valores, por este orden: superior, derecho, inferior, izquierdo */
+        p.four {
+            border-style: solid;
+            border-color: red green blue yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2>Colores de borde individuales</h2>
+    <p class="one">1 color de borde.</p>
+    <p class="two">2 colores de borde diferentes.</p>
+    <p class="three">3 colores de borde diferentes.</p>
+    <p class="four">4 colores de borde diferentes.</p>
+
+
+    <p><b>Nota:</b>La propiedad "border-color" funciona solamente si se especifica antes "border-style".</p>
+</body>
+
+</html>

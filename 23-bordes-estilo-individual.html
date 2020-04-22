@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Existen propiedades individuales para establecer de modo independiente el tipo de borde para cada lado */
+        p {
+            border-top-style: dotted; /* superior */
+            border-right-style: solid; /* derecho */
+            border-bottom-style: dotted; /* inferior */
+            border-left-style: solid; /* izquierdo */
+        }
+
+        body {
+            text-align: center;
+        }
+        
+        /* Si se especifica un valor, este aplica a los cuatro lados */
+        p.one {
+            border-style: dotted;
+        }
+
+        /*
+        Si se especifican dos valores,
+        el primer valor aplica a los lados superior e inferior,
+        el segundo valor aplica a los lados derecho e izquierdo
+        */
+        p.two {
+            border-style: dotted solid;
+        }
+
+        
+        /*
+        Si se especifican tres valores,
+        el primer valor aplica al lado superior,
+        el segundo valor aplica a los lados izquierdo y derecho,
+        el tercer valor aplica al lado inferior
+        */
+        p.three {
+            border-style: dotted solid double;
+        }
+
+        
+        /* Se pueden especificar cuatro valores, por este orden: superior, derecho, inferior, izquierdo */
+        p.four {
+            border-style: dotted solid double dashed;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Estilos de borde individuales</h2>
+    
+    <p class="four">4 estilos de borde diferentes.</p>
+    <p class="three">3 estilos de borde diferentes.</p>
+    <p class="two">2 estilos de borde diferentes.</p>
+    <p class="one">1 estilo de borde.</p>
+
+</body>
+
+</html>

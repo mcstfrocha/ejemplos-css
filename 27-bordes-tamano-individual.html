@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Existen propiedades individuales para establecer de modo independiente el tamaño de borde de cada lado */
+        p.zero {
+            border-style: solid;
+            border-top-width: 10px;
+            border-right-width: 15px;
+            border-bottom-width: 20px;
+            border-left-width: 25px;      
+        }
+        
+        /* Si se especifica un valor, este aplica a los cuatro lados */
+        p.one {
+            border-style: solid;
+            border-width: 5px;
+        }
+        
+        /*
+        Si se especifican dos valores,
+        el primer valor aplica a los lados superior e inferior,
+        el segundo valor aplica a los lados derecho e izquierdo
+        */
+        p.two {
+            border-style: solid;
+            border-width: 20px 5px;
+        }
+
+        /*
+        Si se especifican tres valores,
+        el primer valor aplica al lado superior,
+        el segundo valor aplica a los lados izquierdo y derecho,
+        el tercer valor aplica al lado inferior
+        */
+        p.three {
+            border-style: solid;
+            border-width: 20px 5px 20px;
+        }
+
+        /* Se pueden especificar cuatro valores, por este orden: superior, derecho, inferior, izquierdo */
+        p.four {
+            border-style: solid;
+            border-width: 25px 10px 4px 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>La propiedad border-width</h2>
+    <p>La propiedad border-width puede tener de uno a cuatro valores:</p>
+
+    <p class="zero">Un texto.</p>
+    <p class="one">Un texto.</p>
+    <p class="two">Un texto.</p>
+    <p class="three">Un texto.</p>
+    <p class="four">Un texto.</p>
+
+</body>
+
+</html>
