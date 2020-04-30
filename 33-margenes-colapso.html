@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*
+        Los márgenes superior e inferior de los elementos a veces se contraen en un único margen que es igual al mayor de los dos márgenes.
+
+        ¡Esto no sucede en los márgenes izquierdo y derecho! ¡Solo márgenes superior e inferior!
+        */
+        h1 {
+            margin: 0 0 50px 0;
+        }
+
+        h2 {
+            margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>En este ejemplo, el elemento h1 tiene un margen inferior de 50 px y el elemento h2 tiene un margen superior de 20 px. Entonces el
+        El margen vertical entre h1 y h2 debería haber sido 70 px (50 px + 20 px). Sin embargo, debido al colapso del margen, el
+        el margen real termina siendo de 50 px.</p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+</body>
+
+</html>

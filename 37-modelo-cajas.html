@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        /*
+        De acuerdo con el concepto de modelo de caja, cada elemento de una página es una caja rectangular
+        y puede tener ancho, alto, relleno, bordes y márgenes.
+   
+        Cada parte del modelo de caja corresponde a una propiedad CSS: ancho, alto, relleno, borde y margen.
+        
+        Contenido: el contenido de la caja, donde aparecen el texto y las imágenes.
+        Relleno: un área alrededor del contenido. El relleno es transparente.
+        Borde: un borde que rodea a relleno y contenido.
+        Margen: un área exterior al borde. El margen es transparente.
+
+        De este, el modelo de caja nos permite agregar un borde alrededor de los elementos y definir el espacio entre los elementos.
+        
+        Demo:
+        https://codepen.io/TrevorWelch/pen/deLoMK
+        */
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.5;
+        }
+
+        h1 {
+            background: salmon;
+            padding: 30px;
+            border: 5px solid black;
+        }
+
+        p {
+            color: black;
+            background: lightblue;
+            padding: 15px;
+            border: 10px solid navy;
+        }
+
+        code {
+            color: black;
+            background: white;
+            padding: 20px 5px;
+            border: 5px solid black;
+        }
+
+        ol {
+            background: darkorange;
+        }
+
+        li {
+            color: magenta;
+        }
+
+        li {
+            padding: 0.25em;
+        }
+
+        li:nth-child(odd) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Modelo de cajas</h1>
+    <p>Cada elemento de la página tiene su propio cuadro, que se puede diseñar con CSS</p>
+    <p>Desde el interior hacia el exterior:</p>
+    <ul>
+        <li>contenido</li>
+        <li>relleno</li>
+        <li>borde</li>
+        <li>margen</li>
+    </ul>
+
+    <h2>Fondo</h2>
+    <p> Si se establece un <code> fondo </code> cubrirá a contenido y relleno.</p>
+
+    <h2>En conjunto</h2>
+    <ol>
+        <li>Se asigna a <code>h1</code> un fondo rojo, algo de relleno y un borde negro.</li>
+        <li>Se asigna a cada <code>p</code> un fondo azul, texto blanco, algo de relleno y un borde negro.</li>
+        <li>Se asigna a cada elemento <code>code</code> un fondo blanco, texto negro, un poco de relleno y un borde delgado.
+        </li>
+    </ol>
+
+    <h2>Ejercicio</h2>
+    <ol>
+        <li>Añadir estilos a los <code>h2</code>s, <code>ol</code>s, y <code>li</code>s de esta página.</li>
+        <li>Revisar la sintaxis de <code>margin</code> para aumentar la separación de los distintos elementos de la página.</li>
+    </ol>
+</body>
+
+
+</html>
