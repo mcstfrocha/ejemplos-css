@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*
+        Por defecto, el ancho y alto de un elemento se calcula así:
+
+        ancho + relleno + borde = ancho real de un elemento
+        altura + relleno + borde = altura real de un elemento
+
+        Esto significa que cuando se establece el ancho / alto de un elemento, éste a menudo aparece más grande de lo que se ha establecido (porque el borde y el relleno del elemento se agregan al ancho / alto especificado del elemento).
+        */
+        .div1 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: content-box;
+        }
+
+        .div2 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">Este div es más pequeño (el ancho es 300px y el alto es 100px).</div>
+    <br>
+    <div class="div2">Este div es más grande (el ancho también es de 300 px y la altura es de 100 px).</div>
+
+</body>
+
+</html>
