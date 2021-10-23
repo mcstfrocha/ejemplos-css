@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html>
-<style>
-    input[type=text],
+  <style>
+    div.contenedor {
+      width: 50%;
+      margin: auto;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    input[type="text"],
     select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
     }
 
-    input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
-    input[type=submit]:hover {
-        background-color: #45a049;
+    input[type="submit"]:hover {
+      background-color: #45a049;
     }
 
     div {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
     }
 
     textarea {
-        width: 100%;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        resize: none; /* evitar que cambie de tamaño */
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      resize: none; /* evitar que cambie de tamaño */
     }
 
-    input[name=search] {
-        width: 100%;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url('img/searchicon.png');
-        background-size: 25px 25px;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
+    input[name="search"] {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url("img/searchicon.png");
+      background-size: 25px 25px;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
     }
-</style>
+  </style>
 
-<body>
-
+  <body>
     <h3>CSS para formularios HTML</h3>
 
-    <div>
-        <form action="/action_page.php">
-            <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="contenedor">
+      <form action="/action_page.php">
+        <label for="fname">Nombre</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
 
-            <label for="lname">Apellido</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">Apellido</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
 
-            <label for="country">País</label>
-            <select id="country" name="country">
-                <option value="australia">Portugal</option>
-                <option value="canada">Italia</option>
-                <option value="usa">USA</option>
-            </select>
+        <label for="country">País</label>
+        <select id="country" name="country">
+          <option value="australia">Portugal</option>
+          <option value="canada">Italia</option>
+          <option value="usa">USA</option>
+        </select>
 
-            <textarea>Algo de texto...</textarea>
+        <textarea>Algo de texto...</textarea>
 
-            <input type="text" name="search" placeholder="Buscar..">
+        <input type="text" name="search" placeholder="Buscar.." />
 
-            <input type="submit" value="Enviar">
-        </form>
+        <input type="submit" value="Enviar" />
+      </form>
     </div>
-
-</body>
-
+  </body>
 </html>
