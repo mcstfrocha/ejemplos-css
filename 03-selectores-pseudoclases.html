@@ -60,6 +60,23 @@
             /* :nth-child(3) selecciona cada elemento que sea el tercer hijo de otro elemento */
             color: blue;
         }
+
+        :nth-child(5n+3) {
+            /* Selecciona cada quinto elemento, comenzando con el tercero.
+               Es decir, los elementos numerados 3, 8, 13, 18, 23, etc.
+            */
+            color: blue;
+        }
+
+        :nth-child(odd) {
+            /* :nth-child(odd) selecciona los elementos impares */
+            color: blue;
+        }
+
+        :nth-child(even) {
+            /* :nth-child(even) selecciona los elementos pares */
+            color: blue;
+        }
     </style>
 </head>
 
